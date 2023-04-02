@@ -1,0 +1,458 @@
+
+/* default styling */
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+:root
+{
+    --Primary-color:#ff6500;
+}
+body{
+    background-color: #E2E3E5;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+/*header section styling */
+.header-section
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: 10000;
+
+}
+
+.header-section .logo a{
+    color: black;
+    font-size: 30px;
+}
+
+.header-section .logo .logo_link span
+{
+    color: var(--Primary-color);
+}
+
+.header-section .navigation-bar .navigation-list .navigation-item{
+display: inline-block;
+}
+
+.header-section .navigation-bar .navigation-list .navigation-item a
+{
+text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+}
+
+.header-icons i{
+    color: orange;
+    padding: 10px 12px;
+    background-color: #80808029;
+    margin-left: 3px;
+    border-radius: 4px;
+}
+
+
+
+/* Banner section styling */
+
+.banner-section
+{
+    background: url("Images/home-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-form
+{
+    border: 1px solid;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    top: 20%;
+    width: 670px;
+    padding: 14px;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.banner-form .form-title h2{
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    font-size: 25px;
+
+}
+
+.estate-options
+{
+    display: flex;
+    text-transform: capitalize;
+    gap: 12px;
+    padding-bottom: 13px;
+
+}
+
+.estate-options p{
+    background-color: #ff5c001c;
+    width: 49%;
+    padding: 9px 0;
+    color: #ff5c00;
+    font-weight: bold;
+}
+.inputGroup
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+
+}
+.inputGroup input, select
+{
+    width: 49%;
+    padding: 12px 10px;
+}
+
+.search_button
+{
+    display: inline-block;
+    /* height: 30px; */
+    padding: 14px 0;
+    width: 100%;
+    text-transform: capitalize;
+    color: #ff5c00;
+    border: none;
+    font-weight: bold;
+    background-color: #ff5c001c;
+    cursor: pointer;
+    margin: 8px 0;
+
+}
+
+/* services section styling */
+.title{
+    text-align: center;
+    text-transform: fon;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
+
+.title span{
+    background-color: #ff5c000f;
+    color: #ff5c00;
+    padding: 7px 30px;
+    border-radius: 10px;  
+    text-transform: capitalize;  
+}
+
+.row_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.row_container .service
+{
+    border: 1px solid #8080808a;
+    width: 360px;
+    padding: 12px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.service .service_details h4{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.service .service_details p{
+    color: #808080e0;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.service .row_button a{
+    background-color: #ff5c000f;
+    color: #ff5c00;
+    text-transform: capitalize;
+    padding: 7px 19px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+/* products section styling */
+
+.row_container .product
+{
+    border: 1px solid #8080808a;
+    width: 360px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+
+.row_image img
+{
+    width: 100%;
+}
+
+
+
+.home_options
+{
+
+    position: absolute;
+    display: flex;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: white;
+    left: 3%;
+    z-index: 10000;
+    top: 7px;
+    gap: 9px;
+}
+
+.home_options p{
+    background-color: #0000006e;
+    padding: 5px 17px;
+    border-radius: 3px;
+}
+
+.product_content
+{
+    padding: 18px;
+}
+
+.product_price p
+{
+    color: #ff5c00;
+    font-weight: 600;
+    font-size: 20px;
+}
+.product_details
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+
+}
+
+.contact span,
+.team .social_icons span{
+    background-color: #80808036;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.address_details
+{
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.address_details h3{
+    font-size: 24px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.address_details p{
+    color: grey;
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+
+.room_facilities
+{
+    display: flex;
+    border: 1px solid #8080807d;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.room_facilities p{
+    border-right:  1px solid #8080807d;
+    padding: 11px;
+    text-transform: capitalize;
+    color: grey;
+    font-size: 14px;
+}
+
+.room_facilities p:last-child{
+    border-right: none;
+}
+
+.room_facilities p i
+{
+    font-size: 10px;
+    vertical-align: middle;
+    padding-right: 4px;
+    color: #000;
+
+}
+.product_buttons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.product_buttons .req_button
+{
+    background-color: #ff5c000f;
+    color: #ff5c00;
+    text-transform: capitalize;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* team section styling */
+
+.team
+{
+    width: 260px;
+    padding: 18px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    background-color: white;
+
+}
+.team .contact_icons
+{
+    display: flex;
+    justify-content: space-between;
+}
+.team span{
+    color: grey;
+    font-size: 18px;
+}
+
+.team_image img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 4px solid #80808057;
+}
+
+
+.team_details h5{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.team_details p{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* contact us styling */
+
+.contact_image img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.contact_section .contact{
+    width: 365px;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+}
+
+.contact_details h4{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.contact_details p
+{
+    color: grey;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+.footer
+{
+    background-color: white;
+    margin: 2rem 12rem;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+}
+
+.footer_container
+
+{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+}
+
+.foot h2{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.foot ul li a{
+    text-transform: capitalize;
+    display: block;
+    padding-bottom: 10px;
+    color: grey;
+    font-size: 15px;
+    text-align: left;
+}
